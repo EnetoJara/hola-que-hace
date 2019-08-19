@@ -1,0 +1,42 @@
+@import "mixins";
+@import "colors";
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+	@include respond(tab-land) { // width < 1200?
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    }
+
+    @include respond(tab-port) { // width < 900?
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+
+    @include respond(big-desktop) {
+        font-size: 75%; //1rem = 12, 12/16
+    }
+}
+
+body {
+	background-color: $background-color;
+	font-size: 1.6rem;
+	font-family: "Lato" sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+.flex-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 2rem;
+}
+
+.flex-item-3 {
+	flex: .3;
+}
+
+*,*::before,*::after {
+	box-sizing: inherit;
+}

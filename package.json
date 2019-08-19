@@ -1,0 +1,38 @@
+{
+	"name": "hola-ke-ace",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "webpack-dev-server --config=config/webpack.config.babel.js --hot --colors --inline",
+		"build": "webpack --config=config/webpack.config.babel.js"
+	},
+	"dependencies": {
+		"@babel/register": "7.5.5",
+		"@babel/runtime": "7.5.5",
+		"@babel/runtime-corejs2": "7.5.5",
+		"axios": "0.19.0",
+		"core-js": "2",
+		"lodash": "4.17.15",
+		"moment": "2.24.0",
+		"normalize.css": "8.0.1",
+		"react": "16.9.0",
+		"react-dom": "16.9.0",
+		"react-router": "5.0.1",
+		"react-router-dom": "5.0.1"
+	},
+	"devDependencies": {
+		"@babel/cli": "7.5.5",
+		"@babel/core": "7.5.5",
+		"@babel/helpers": "7.5.5",
+		"@babel/plugin-proposal-class-properties": "7.5.5",
+		"@babel/plugin-transform-runtime": "7.5.5",
+		"@babel/preset-env": "7.5.5",
+		"@babel/preset-react": "7.0.0",
+		"@hot-loader/react-dom": "16.9.0",
+		"babel-core": "7.0.0-bridge.0"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}
